@@ -9,6 +9,7 @@ import "./CartButton.css";
 
 const CartButton = (props) => {
   const { history } = props;
+  console.log(1);
   let cartBadge = "";
   const [cartContents, setCartContents] = useState(
     ShoppingCart.getCartContents()

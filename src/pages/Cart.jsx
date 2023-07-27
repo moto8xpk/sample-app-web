@@ -10,6 +10,7 @@ import Button, { BUTTON_SIZES, BUTTON_TYPES } from '../components/Button';
 import './Cart.css';
 
 const Cart = ({ history }) => {
+  console.log(1);
   const contents = ShoppingCart.getCartContents();
 
   return (

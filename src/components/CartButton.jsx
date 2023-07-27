@@ -1,3 +1,5 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
+/* eslint-disable react-hooks/exhaustive-deps */
 import React, { useEffect, useState } from "react";
 import { withRouter } from "react-router-dom";
 import PropTypes from "prop-types";
@@ -19,7 +21,7 @@ const CartButton = (props) => {
 
   useEffect(() => {
     ShoppingCart.registerCartListener(cartListener);
-  }, []);
+  }, [cartListener]);
 
   if (cartContents.length > 0) {
     cartBadge = (

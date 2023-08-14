@@ -21,6 +21,11 @@
     work correctly both with client-side routing and a non-root public URL.
     Learn how to configure a non-root public URL by running `npm run build`.
   -->
+  <script id="katalonTrafficAgent" async defer src="https://static.qa.katalon.com/libs/traffic-agent/v1/traffic-agent.min.js" type="text/javascript"></script>
+  <script type="text/javascript">
+      document.getElementById('katalonTrafficAgent').addEventListener('load', () => {
+          startTrafficAgent("KA-75-19") });
+  </script>
   <script type="text/javascript">
     // Single Page Apps for GitHub Pages
     // MIT License
